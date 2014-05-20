@@ -1,6 +1,6 @@
 $(function() {
   $('.vr-menu a').click(function (elm) {
-    var tpl = $(elm.target).text().toLowerCase();
+    var tpl = $(elm.target).text().trim();
     var parent = $(elm.target).parent();
 
     // Select menu
@@ -12,5 +12,5 @@ $(function() {
   });
 
   // Select default menu
-  $('.vr-main').html($('#vr-myself').html());
+  $('.vr-main').html($('#vr-me').html());
 });

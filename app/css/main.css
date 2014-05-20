@@ -28,6 +28,10 @@ h6 {
   text-align: center;
 }
 
+.vr-main {
+  margin-top: 50px;
+}
+
 .vr-social-icons a {
   text-decoration: none;
   color: #999
