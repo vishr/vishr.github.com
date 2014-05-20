@@ -3,8 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <title>Vishal Rana</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Special+Elite">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<p>I will be back!</p>
+  <div class="pure-g-r">
+    <div class="pure-u-1-1">
+      <div class="vr-header">
+        <span class="vr-logo">{{ Vishal Rana }}</span>
+        <img class="vr-avatar" src="img/walle.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="pure-g-r">
+    <div class="pure-u-1-5">
+      <div class="vr-menu">
+        <div class="pure-menu pure-menu-open">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="http://vishr.svbtle.com" target="_blank">Blog</a></li>
+            <li>
+              <a href="https://www.dropbox.com/s/qxmhbpwr43zgmzo/resume.pdf" target="_blank">
+                Resume
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="pure-u-4-5">
+      <div class="vr-main"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="vr-social-icons">
+      <span class="vr-github-icon">
+        <a href="https://github.com/vishr">
+          <i class="fa fa-github-square fa-2x"></i>
+        </a>
+      <span>
+      <span class="vr-twitter-icon">
+        <a href="https://twitter.com/vishr13">
+          <i class="fa fa-twitter-square fa-2x"></i>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Templates -->
+  <script id="vr-about" type="text/template">
+    <h2>About</h2>
+    <p>
+      I am a computer programmer based out of Bay Area, California.
+      I write Java, JavaScript and Python. Currently seeking the purpose of life.
+      I will be back soon!
+    </p>
+  </script>
+
+  <script id="vr-projects" type="text/template">
+    <h2>Projects</h2>
+
+    <a href="http://vishr.com/local-history" target="_blank"><h3>Local History</h3></a>
+    A Sublime Text 2/3 plugin for maintaining local history of files
+
+    <a href="http://vishr.com/scale"><h3>Scale</h3></a>
+    A minimalistic load balancer
+
+    <a href="http://vishr.com/gat"><h3>Gat</h3></a>
+    An HTTP caching server
+  </script>
+
+  <script id="vr-photography" type="text/template">
+    <h2>Photography</h2>
+    I will show it to you soon!
+  </script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.3/zepto.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
