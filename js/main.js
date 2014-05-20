@@ -12,5 +12,5 @@ $(function() {
   });
 
   // Select default menu
-  $('.vr-main').html($('#vr-about').html());
+  $('.vr-main').html($('#vr-myself').html());
 });
