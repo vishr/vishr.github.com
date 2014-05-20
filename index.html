@@ -39,13 +39,24 @@
             <div class="vr-menu">
               <div class="pure-menu pure-menu-open pure-menu-horizontal">
                 <ul>
-                  <li class="pure-menu-selected"><a href="#">Myself</a></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">Photography</a></li>
-                  <li><a href="http://vishr.svbtle.com" target="_blank">Blog</a></li>
+                  <li class="pure-menu-selected">
+                    <a href="#">
+                      <i class="fa fa-user"></i> me
+                    </a>
+                  </li>
                   <li>
-                    <a href="https://www.dropbox.com/s/qxmhbpwr43zgmzo/resume.pdf" target="_blank">
-                      Resume
+                    <a href="#">
+                      <i class="fa fa-code fa"></i> code
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-pencil"></i> blog
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-file-pdf-o"></i> resume
                     </a>
                   </li>
                 </ul>
@@ -76,8 +87,8 @@
         </footer>
 
         <!-- Templates -->
-        <script id="vr-myself" type="text/template">
-          <h2>Myself</h2>
+        <script id="vr-me" type="text/template">
+          <h2>Me</h2>
           <p>
             I am a computer programmer based out of Bay Area, California.
             I write Java, JavaScript and Python. Currently seeking the purpose of life.
@@ -85,7 +96,7 @@
           </p>
         </script>
 
-        <script id="vr-projects" type="text/template">
+        <script id="vr-code" type="text/template">
           <h2>Projects</h2>
 
           <a href="http://vishr.com/local-history" target="_blank"><h3>Local History</h3></a>
@@ -98,9 +109,18 @@
           An HTTP caching server
         </script>
 
-        <script id="vr-photography" type="text/template">
-          <h2>Photography</h2>
-          I will show it to you soon!
+        <script id="vr-blog" type="text/template">
+          <h2>Blog</h2>
+          <a href="http://vishr.svbtle.com" target="_blank">
+            http://vishr.svbtle.com
+          </a>
+        </script>
+
+        <script id="vr-resume" type="text/template">
+          <h2>Resume</h2>
+          <a href="https://www.dropbox.com/s/qxmhbpwr43zgmzo/resume.pdf" target="_blank">
+            https://www.dropbox.com/s/qxmhbpwr43zgmzo/resume.pdf
+          </a>
         </script>
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.3/zepto.min.js"></script>
