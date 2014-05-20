@@ -1,0 +1,48 @@
+body {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vr-menu {
+  margin-top: 100px;
+}
+
+.vr-header {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.vr-logo {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Special Elite', cursive;
+}
+
+.vr-social-icons a {
+  text-decoration: none;
+  color: #999
+}
+
+.vr-github-icon a:hover {
+  color: #000;
+}
+
+.vr-twitter-icon a:hover {
+  color: #00a0d1;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.vr-main {
+  margin: 20px 50px 0;
+}
+
+/* Override pure css */
+.pure-menu.pure-menu-open,
+.pure-menu.pure-menu-horizontal li .pure-menu-children {
+    border: initial;
+}
