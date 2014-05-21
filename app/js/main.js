@@ -1,16 +1,23 @@
-$(function() {
-  $('.vr-menu a').click(function (elm) {
-    var tpl = $(elm.target).text().trim();
-    var parent = $(elm.target).parent();
+'use strict';
 
-    // Select menu
-    $('.vr-menu li').removeClass('pure-menu-selected');
-    parent.addClass('pure-menu-selected');
-
-    // Show content
-    $('.vr-main').html($('#vr-' + tpl).html());
+angular.module('vr', [
+  'ngRoute',
+  'vr.controllers'
+])
+.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/', {
+    templateUrl: 'tpl/me.html'
   });
-
-  // Select default menu
-  $('.vr-main').html($('#vr-me').html());
-});
+  $routeProvider.when('/code', {
+    templateUrl: 'tpl/code.html'
+  });
+  $routeProvider.when('/blog', {
+    templateUrl: 'tpl/blog.html'
+  });
+  $routeProvider.when('/resume', {
+    templateUrl: 'tpl/resume.html'
+  });
+  $routeProvider.otherwise({
+    redirectTo: '/'
+  });
+}]);
