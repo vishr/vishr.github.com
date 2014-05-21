@@ -1,8 +1,5 @@
-body {
+.container {
   max-width: 768px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 20px;
 }
 
 .vr-header {
@@ -26,6 +23,7 @@ h6 {
 
 .vr-menu {
   text-align: center;
+  font-size: 18px;
 }
 
 .vr-main {
@@ -41,6 +39,10 @@ h6 {
   color: #000;
 }
 
+.vr-stack-overflow-icon a:hover {
+  color: #fe7a15;
+}
+
 .vr-twitter-icon a:hover {
   color: #00a0d1;
 }
@@ -51,8 +53,6 @@ footer {
   text-align: center;
 }
 
-/* Override pure css */
-.pure-menu.pure-menu-open,
-.pure-menu.pure-menu-horizontal li .pure-menu-children {
-    border: initial;
-}
+/*
+  Override bootstrap css
+*/
