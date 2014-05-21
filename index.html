@@ -6,7 +6,7 @@
         <title>Vishal Rana</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Special+Elite">
         <link rel="stylesheet" href="css/main.css">
@@ -18,43 +18,43 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="vr-header">
-          <div class="pure-g-r">
-            <div class="pure-u-1-1">
-              <h2 class="vr-logo">> Vishal Rana</h2>
+        <div class="container">
+          <div class="vr-header">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="vr-logo">> Vishal Rana</h1>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="vr-avatar">
-          <div class="pure-g-r">
-            <div class="pure-u-1-1">
-              <span ><img src="img/walle.png"></span>
+          <div class="vr-avatar">
+            <div class="row">
+              <div class="col-md-12">
+                <span ><img src="img/walle.png"></span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="pure-g-r">
-          <div class="pure-u-1-1">
-            <div class="vr-menu">
-              <div class="pure-menu pure-menu-open pure-menu-horizontal">
-                <ul>
-                  <li ng-class="{'pure-menu-selected': isActiveMenu('/')}">
+          <div class="vr-menu">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <ul class="nav nav-pills nav-justified">
+                  <li>
                     <a href="#/">
                       <i class="fa fa-user"></i> me
                     </a>
                   </li>
-                  <li ng-class="{'pure-menu-selected': isActiveMenu('/code')}">
+                  <li>
                     <a href="#/code">
                       <i class="fa fa-code fa"></i> code
                     </a>
                   </li>
-                  <li ng-class="{'pure-menu-selected': isActiveMenu('/blog')}">
+                  <li>
                     <a href="#/blog">
                       <i class="fa fa-pencil"></i> blog
                     </a>
                   </li>
-                  <li ng-class="{'pure-menu-selected': isActiveMenu('/resume')}">
+                  <li>
                     <a href="#/resume">
                       <i class="fa fa-file-pdf-o"></i> resume
                     </a>
@@ -64,27 +64,34 @@
             </div>
           </div>
 
-          <div class="pure-g-r">
-            <div class="pure-u-1-1">
+          <div class="row">
+            <div class="col-md-12">
               <div class="vr-main" ng-view></div>
             </div>
           </div>
-        </div>
 
-        <footer>
-          <div class="vr-social-icons">
-            <span class="vr-github-icon">
-              <a href="https://github.com/vishr">
-                <i class="fa fa-github-square fa-2x"></i>
-              </a>
-            <span>
-            <span class="vr-twitter-icon">
-              <a href="https://twitter.com/vishr13">
-                <i class="fa fa-twitter-square fa-2x"></i>
-              </a>
-            </span>
-          </div>
-        </footer>
+          <footer>
+            <div class="vr-social-icons">
+              <ul class="list-inline">
+                <li class="vr-github-icon">
+                  <a href="https://github.com/vishr" target="_blank">
+                    <i class="fa fa-github fa-2x"></i>
+                  </a>
+                </li>
+                <li class="vr-stack-overflow-icon">
+                  <a href="http://stackoverflow.com/users/197473/vishal" target="_blank">
+                    <i class="fa fa-stack-overflow fa-2x"></i>
+                  </a>
+                </li>
+                <li class="vr-twitter-icon">
+                  <a href="https://twitter.com/vishr13" target="_blank">
+                    <i class="fa fa-twitter fa-2x"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular-route.min.js"></script>
