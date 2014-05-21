@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="vr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
     </head>
-    <body>
+    <body ng-controller="Ctrl">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -21,7 +21,7 @@
         <div class="vr-header">
           <div class="pure-g-r">
             <div class="pure-u-1-1">
-              <h2 class="vr-logo">{{ Vishal Rana }}</h2>
+              <h2 class="vr-logo">> Vishal Rana</h2>
             </div>
           </div>
         </div>
@@ -39,23 +39,23 @@
             <div class="vr-menu">
               <div class="pure-menu pure-menu-open pure-menu-horizontal">
                 <ul>
-                  <li class="pure-menu-selected">
-                    <a href="#">
+                  <li ng-class="{'pure-menu-selected': isActiveMenu('/')}">
+                    <a href="#/">
                       <i class="fa fa-user"></i> me
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
+                  <li ng-class="{'pure-menu-selected': isActiveMenu('/code')}">
+                    <a href="#/code">
                       <i class="fa fa-code fa"></i> code
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
+                  <li ng-class="{'pure-menu-selected': isActiveMenu('/blog')}">
+                    <a href="#/blog">
                       <i class="fa fa-pencil"></i> blog
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
+                  <li ng-class="{'pure-menu-selected': isActiveMenu('/resume')}">
+                    <a href="#/resume">
                       <i class="fa fa-file-pdf-o"></i> resume
                     </a>
                   </li>
@@ -66,7 +66,7 @@
 
           <div class="pure-g-r">
             <div class="pure-u-1-1">
-              <div class="vr-main"></div>
+              <div class="vr-main" ng-view></div>
             </div>
           </div>
         </div>
@@ -86,48 +86,10 @@
           </div>
         </footer>
 
-        <!-- Templates -->
-        <script id="vr-me" type="text/template">
-          <h2>Me</h2>
-          <p>
-            I am a computer programmer based out of Bay Area, California.
-            I write Java, JavaScript and Python. Currently seeking the purpose of life.
-            I will be back soon!
-          </p>
-        </script>
-
-        <script id="vr-code" type="text/template">
-          <h2>Projects</h2>
-
-          <a href="http://vishr.com/local-history" target="_blank"><h3>Local History</h3></a>
-          A Sublime Text 2/3 plugin for maintaining local history of files
-
-          <a href="http://lytup.com" target="_blank"><h3>Lytup</h3></a>
-          A blazing fast file transfer platform
-
-          <a href="http://vishr.com/scale"><h3>Scale</h3></a>
-          A minimalistic load balancer
-
-          <a href="http://vishr.com/gat"><h3>Gat</h3></a>
-          An HTTP caching server
-        </script>
-
-        <script id="vr-blog" type="text/template">
-          <h2>Blog</h2>
-          <a href="http://vishr.svbtle.com" target="_blank">
-            http://vishr.svbtle.com
-          </a>
-        </script>
-
-        <script id="vr-resume" type="text/template">
-          <h2>Resume</h2>
-          <a href="https://www.dropbox.com/s/qxmhbpwr43zgmzo/resume.pdf" target="_blank">
-            https://www.dropbox.com/s/qxmhbpwr43zgmzo/resume.pdf
-          </a>
-        </script>
-
-        <script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.3/zepto.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular-route.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/controllers.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
